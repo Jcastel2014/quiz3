@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS signUp(
+    id bigserial PRIMARY KEY,
+    email text NOT NULL,
+    firstName text NOT NULL, middleName text NOT NULL, lastName text NOT NULL
+);
+
+curl -X DELETE https://api.example.com/resource/123 -d '{"key":"value"}'
+
+curl -X DELETE https://api.example.com/resource/123 \
+     -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+     -d '{"key":"value"}'
